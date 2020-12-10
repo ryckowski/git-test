@@ -1,0 +1,56 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "idFusion integration: test2",
+    "description" : "API documentation",
+    "version" : "1.0"
+  },
+  "paths" : {
+    "/integration//test2/open-api-schema" : {
+      "description" : "Save data",
+      "post" : {
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "vehicleObjects" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "year" : {
+                            "type" : "string"
+                          },
+                          "name" : {
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "quoteOrPolicy" : {
+                      "type" : "object",
+                      "properties" : {
+                        "submissionId" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "vehiclesList" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
